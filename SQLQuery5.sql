@@ -1,0 +1,1 @@
+﻿SELECT * FROM  Template WHERE TemplateName LIKE '% n %' 
