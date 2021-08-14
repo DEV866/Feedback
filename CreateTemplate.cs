@@ -123,7 +123,7 @@ namespace Feedback
             if ((txtTemplateName.Text.Trim() != "") &&(txtTemplate.Text.Trim()!=""))
             {
                 DBConnection.getInsatanceOfDBConnection().saveToDBTemplate(Constants.INSERTTEMPLATE, txtTemplateName.Text.Trim(), txtTemplate.Text.Trim());
-                MessageBox.Show("Template saved.");
+                MessageBox.Show(  "Template added successfully." );
                 // Form2 f2 = new Form2();
                 //   f2.lstTemplate.Items.Add(txtTemplateName.Text);
                 //  f2.Show();

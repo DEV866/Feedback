@@ -10,15 +10,15 @@
   <Class Name="Feedback.CreateFeedback">
     <Position X="9.75" Y="4.5" Width="2.75" />
     <TypeIdentifier>
-      <HashCode>OAAAAKKGAGAAADBEAACAAQISAQI8AAqAIPAhAEQAAAY=</HashCode>
-      <FileName>Form2.cs</FileName>
+      <HashCode>OAAAAKKGAGAAADBEAACAAQISAUI8AAqAIPApAEAAAAY=</HashCode>
+      <FileName>CreateFeedback.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Feedback.Form1">
+  <Class Name="Feedback.SenderInfo">
     <Position X="22" Y="4.5" Width="3" />
     <TypeIdentifier>
       <HashCode>ABgIAQAAACAAQBQAAACAIAACAAAgAAgAAnQAAQBAAAE=</HashCode>
-      <FileName>Form1.cs</FileName>
+      <FileName>SenderInfo.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Feedback.DBConnection">
@@ -33,13 +33,6 @@
     <ShowAsAssociation>
       <Field Name="emailbody" />
     </ShowAsAssociation>
-  </Class>
-  <Class Name="Feedback.d">
-    <Position X="15.75" Y="4.5" Width="2.25" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAACAAABAAAACgAAACAAAIAEAAAEgAAAAAAAA=</HashCode>
-      <FileName>d.cs</FileName>
-    </TypeIdentifier>
   </Class>
   <Class Name="Feedback.CreateTemplate">
     <Position X="18.25" Y="4.5" Width="3.25" />

@@ -281,7 +281,7 @@ namespace Feedback
 
 
                     DBConnection.getInsatanceOfDBConnection().retrieve(i, null, Constants.RETRIEVEApplicantsBYid);
-                    Broadcast se = new Broadcast(/*txtPort.Text,*/ userid, pass, "smtp.gmail.com", address, null, emailbody, job, name);
+                    Broadcast se = new Broadcast(/*txtPort.Text,*/ userid, pass, "smtp.gmail.com", address, null, emailbody, job+" Application at HappyTech", "Dear "+name);
                     f2.s = i;
 
                 }

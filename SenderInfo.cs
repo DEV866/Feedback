@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace Feedback
 {
-    public partial class Form1 : Form
+    public partial class SenderInfo : Form
     {
       
-        public Form1()
+        public SenderInfo()
         {
             InitializeComponent();
             
@@ -70,8 +70,8 @@ namespace Feedback
                 db.userid = txtUsername.Text;
                 db.pass = txtPassword.Text;
 
-                CreateFeedback f2 = new CreateFeedback();
-                f2.Show();
+                CreateFeedback ct = new CreateFeedback();
+                ct.Show();
                 this.Hide();
 
 

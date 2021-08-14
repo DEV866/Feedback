@@ -1,7 +1,7 @@
 ﻿
 namespace Feedback
 {
-    partial class Form1
+    partial class SenderInfo
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,6 @@ namespace Feedback
         private void InitializeComponent()
         {
             this.btn_signin = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.lbl_email = new System.Windows.Forms.Label();
             this.lbl_password = new System.Windows.Forms.Label();
@@ -40,8 +39,9 @@ namespace Feedback
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbePassword = new System.Windows.Forms.Label();
             this.lbeEmail = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_signin
@@ -54,19 +54,9 @@ namespace Feedback
             this.btn_signin.Name = "btn_signin";
             this.btn_signin.Size = new System.Drawing.Size(150, 52);
             this.btn_signin.TabIndex = 54;
-            this.btn_signin.Text = "Sign in";
+            this.btn_signin.Text = "Continue";
             this.btn_signin.UseVisualStyleBackColor = false;
             this.btn_signin.Click += new System.EventHandler(this.btn_signin_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Feedback.Properties.Resources.evolving_google_identity_2x1;
-            this.pictureBox1.Location = new System.Drawing.Point(131, 29);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(281, 81);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
             // 
             // txtPassword
             // 
@@ -75,7 +65,6 @@ namespace Feedback
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(452, 43);
             this.txtPassword.TabIndex = 1;
-            this.txtPassword.Text = "Dev866@$1";
             this.txtPassword.UseSystemPasswordChar = true;
             // 
             // lbl_email
@@ -170,18 +159,29 @@ namespace Feedback
             this.lbeEmail.TabIndex = 55;
             this.lbeEmail.Text = "Enter email or phone";
             // 
-            // Form1
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Feedback.Properties.Resources.evolving_google_identity_2x1;
+            this.pictureBox1.Location = new System.Drawing.Point(131, 29);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(281, 81);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
+            // SenderInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1049, 769);
             this.Controls.Add(this.panel1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "SenderInfo";
+            this.Text = "Sender Information";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -194,7 +194,7 @@ namespace Feedback
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            d db = new d();
+            ApplicantDGV db = new ApplicantDGV();
             db.Show();
            // this.Hide();
 
@@ -227,6 +227,16 @@ namespace Feedback
         private void label11_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            DBConnection db = DBConnection.getInsatanceOfDBConnection();
+            db.userid = null;
+            db.pass = null;
+            SenderInfo si = new SenderInfo();
+            si.Show();
+            this.Hide();
         }
     }
 }

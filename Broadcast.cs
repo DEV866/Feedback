@@ -52,30 +52,40 @@ namespace Feedback
             Client.Port = 587;                                                              //Convert.ToInt32(txtPort);
             Client.EnableSsl = true;                                             // chkSSL.Checked;
             Client.Credentials = login;
+            var isValid = true;
             try
             {
 
 
-                msg = new MailMessage { From = new MailAddress(u, "DEV", Encoding.ASCII) };
+                msg = new MailMessage { From = new MailAddress(u, "Happy Tech", Encoding.ASCII) };
             }
             catch (Exception ex)
             {
+                
                 MessageBox.Show("Incorrect email or password!");
+                isValid = false;
                 
             }
 
-            try
+            if (isValid == true)
             {
 
+                try
+                {
 
-                msg.To.Add(new MailAddress(txtTo));
-               
+
+                    msg.To.Add(new MailAddress(txtTo));
+
+                }
+                catch (Exception ex)
+                {
+                    isValid = false;
+                    MessageBox.Show("Invalid recipient Email " + txtTo);
+
+                }
             }
-            catch(Exception a)
+            if (isValid == true)
             {
-                MessageBox.Show("Invalid recipient Email" + txtTo);
-               
-            }
 
                 if (!string.IsNullOrEmpty(txtCC))
                     msg.To.Add(new MailAddress(txtCC));
@@ -89,19 +99,15 @@ namespace Feedback
                 msg.IsBodyHtml = true;
                 msg.Priority = MailPriority.Normal;
                 msg.DeliveryNotificationOptions = DeliveryNotificationOptions.OnFailure;
-              //  Client.SendCompleted += new SendCompletedEventHandler(SendCompletedCallback);
+                //  Client.SendCompleted += new SendCompletedEventHandler(SendCompletedCallback);
                 string userstate = "Sending...";
-            try
-            {
+               
 
 
-                Client.SendAsync(msg, userstate);
+                    Client.SendAsync(msg, userstate);
+                
+           
             }
-            catch(Exception ex)
-            {
-                MessageBox.Show("Recipient email not available");
-            }
-            
 
 
 

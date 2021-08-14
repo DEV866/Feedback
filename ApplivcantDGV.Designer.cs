@@ -1,7 +1,7 @@
 ﻿
 namespace Feedback
 {
-    partial class d
+    partial class ApplicantDGV
     {
         /// <summary>
         /// Required designer variable.

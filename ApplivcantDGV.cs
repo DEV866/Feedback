@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Feedback
 {
-    public partial class d : Form
+    public partial class ApplicantDGV : Form
     {
-        public d()
+        public ApplicantDGV()
         {
             InitializeComponent();
         }

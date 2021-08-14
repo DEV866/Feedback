@@ -31,8 +31,6 @@ namespace Feedback
         {
             this.label9 = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txtSmtp = new System.Windows.Forms.TextBox();
             this.btnSend = new System.Windows.Forms.Button();
             this.txtSubject = new System.Windows.Forms.TextBox();
             this.txtJob = new System.Windows.Forms.TextBox();
@@ -52,6 +50,7 @@ namespace Feedback
             this.label10 = new System.Windows.Forms.Label();
             this.txtMessage = new System.Windows.Forms.RichTextBox();
             this.label11 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label9
@@ -72,28 +71,6 @@ namespace Feedback
             this.txtName.Size = new System.Drawing.Size(593, 35);
             this.txtName.TabIndex = 56;
             this.txtName.Text = "\r\n";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(88, 585);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(69, 30);
-            this.label8.TabIndex = 55;
-            this.label8.Text = "Smtp:";
-            this.label8.Visible = false;
-            // 
-            // txtSmtp
-            // 
-            this.txtSmtp.Font = new System.Drawing.Font("Segoe UI", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSmtp.Location = new System.Drawing.Point(273, 586);
-            this.txtSmtp.Name = "txtSmtp";
-            this.txtSmtp.Size = new System.Drawing.Size(173, 35);
-            this.txtSmtp.TabIndex = 54;
-            this.txtSmtp.Text = "smtp.gmail.com\r\n";
-            this.txtSmtp.Visible = false;
-            this.txtSmtp.TextChanged += new System.EventHandler(this.txtSmtp_TextChanged);
             // 
             // btnSend
             // 
@@ -233,7 +210,7 @@ namespace Feedback
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(200, 38);
             this.button3.TabIndex = 67;
-            this.button3.Text = "Add template";
+            this.button3.Text = "Template";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -283,11 +260,25 @@ namespace Feedback
             this.label11.Text = "Select Template:";
             this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
+            // button4
+            // 
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Segoe UI Semibold", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button4.Location = new System.Drawing.Point(12, 17);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(185, 55);
+            this.button4.TabIndex = 73;
+            this.button4.Text = "<Change Sender";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // CreateFeedback
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1054, 731);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.txtMessage);
             this.Controls.Add(this.label10);
@@ -301,8 +292,6 @@ namespace Feedback
             this.Controls.Add(this.btnADD);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.txtName);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.txtSmtp);
             this.Controls.Add(this.btnSend);
             this.Controls.Add(this.txtSubject);
             this.Controls.Add(this.txtJob);
@@ -322,8 +311,6 @@ namespace Feedback
         #endregion
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtName;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txtSmtp;
         private System.Windows.Forms.Button btnSend;
         private System.Windows.Forms.TextBox txtSubject;
         private System.Windows.Forms.TextBox txtJob;
@@ -343,5 +330,6 @@ namespace Feedback
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.RichTextBox txtMessage;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Button button4;
     }
 }
